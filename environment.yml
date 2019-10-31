@@ -10,5 +10,6 @@ dependencies:
   - ipympl
   - ipython
   - sunpy
+  - ndcube
   - pbzip2
   - pip
