@@ -4,14 +4,9 @@ channels:
 dependencies:
   - python>=3.6
   - numpy
+  - scipy
   - astropy
   - matplotlib
   - ipympl
   - ipython
-  - jupyterlab
   - sunpy
-  - pbzip2
-  - pip
-  - pip:
-    - "--editable=git+https://github.com/sunpy/irispy.git#egg=irispy-master"
-
