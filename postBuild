@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Build jupyterlab extensions
+jupyter labextension install @jupyter-widgets/jupyterlab-manager jupyter-matplotlib
+
+# Download data files
+wget -c http://sdc.uio.no/search/file/iris_l2_20180102_153155_3610108077_SJI_1400_t000.fits.gz -P notebooks/
+wget -c http://sdc.uio.no/search/file/iris_l2_20140919_051712_3860608353_SJI_2832_t000.fits -P notebooks/
+wget -c https://folk.uio.no/tiago/iris_l2_20180102_153155_3610108077_raster_t000_r00000.fits.bz2 -P notebooks
+pbunzip2 notebooks/iris_l2_20180102_153155_3610108077_raster_t000_r00000.fits.bz2

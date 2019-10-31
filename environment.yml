@@ -1,0 +1,17 @@
+name: iris
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.6
+  - numpy
+  - astropy
+  - matplotlib
+  - ipympl
+  - ipython
+  - jupyterlab
+  - sunpy
+  - pbzip2
+  - pip
+  - pip:
+    - "--editable=git+https://github.com/sunpy/irispy.git#egg=irispy-master"
+
